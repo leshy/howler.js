@@ -124,7 +124,7 @@
   };
 
   // allow access to the global audio controls
-  window.Howler = new HowlerGlobal();
+  exports.Howler = new HowlerGlobal();
 
   // check for browser codec support
   var audioTest = new Audio();
@@ -138,7 +138,7 @@
   audioTest = null;
 
   // setup the audio object
-  var Howl = window.Howl = function(o) {
+  var Howl = exports.Howl = function(o) {
     var self = this;
 
     // setup the defaults
